@@ -16,18 +16,15 @@
   <a href="https://github.com/liampulles/countdown/releases">
     <img src="https://img.shields.io/github/release/liampulles/countdown.svg" alt="[GitHub release]">
   </a>
-  <a href="https://travis-ci.com/liampulles/countdown">
-    <img src="https://travis-ci.com/liampulles/countdown.svg?branch=master" alt="[Build Status]">
+  <a href="https://travis-ci.com/liampulles/go-countdown">
+    <img src="https://travis-ci.com/liampulles/go-countdown.svg?branch=master" alt="[Build Status]">
   </a>
     <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/liampulles/countdown">
   <a href="https://goreportcard.com/report/github.com/liampulles/countdown">
     <img src="https://goreportcard.com/badge/github.com/liampulles/countdown" alt="[Go Report Card]">
   </a>
-  <a href="https://codecov.io/gh/liampulles/countdown">
-    <img src="https://codecov.io/gh/liampulles/countdown/branch/master/graph/badge.svg" />
-  </a>
-  <a href="https://microbadger.com/images/lpulles/countdown">
-    <img src="https://images.microbadger.com/badges/image/lpulles/countdown.svg">
+  <a href="https://codecov.io/gh/liampulles/go-countdown">
+    <img src="https://codecov.io/gh/liampulles/go-countdown/branch/master/graph/badge.svg" />
   </a>
   <a href="https://github.com/liampulles/countdown/blob/master/LICENSE.md">
     <img src="https://img.shields.io/github/license/liampulles/countdown.svg" alt="[License]">
