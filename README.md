@@ -2,14 +2,12 @@
   countdown
 </h1>
 
-<h4 align="center"> Generates Version 4 UUIDs upon an HTTP request</a></h4>
+<h4 align="center">A tool to "assist" with Countdown. ;)</a></h4>
 
 <p align="center">
   <a href="#status">Status</a> •
   <a href="#install">Install</a> •
-  <a href="#configuration">Configuration</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#benchmark">Benchmark</a> •
+  <a href="#usage-examples">Usage Examples</a> •
   <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
 </p>
@@ -38,70 +36,19 @@
 
 ## Status
 
-UUID Server is currently on API v1, and is available for general usage!
+Countdown is currently (and possibly permanently) in alpha
 
 ## Install
 
-### Native
+Either download a release from the releases page, or clone and run `make install`.
 
-Either download a release from the releases page, or clone and run `make install`, and execute:
+## Usage Examples
 
-```bash
-countdown
-```
-
-### Docker
-
-Either pull `lpulles/countdown:latest`, or clone and run `make docker-build`, and execute:
+### Conundrum
 
 ```bash
-docker run -p 8080:8080 lpulles/countdown:latest
-```
-
-## Configuration
-
-You can set the following environment variables:
-
-* `PORT`: What port to run the server on. Defaults to `8080`
-* `LOGLEVEL`: What level to log at. Valid levels: [`INFO`, `ERROR`]. Defaults to `INFO`.
-
-## Usage
-
-Once the app is running (see [Install](#install)):
-
-```bash
-curl http://127.0.0.1:8080/
-```
-
-(Or an equivalent way of sending a `GET` on `/`)
-
-Should yield a response similar to:
-
-```text
-bb290e59-8139-41ad-8f4a-b22002725583
-```
-
-## Benchmark
-
-Result of `countdown 2>/dev/null & siege -t30s http://127.0.0.1:8080`
-
-```text
-** SIEGE 4.0.4
-** Preparing 25 concurrent users for battle.
-The server is now under siege...
-Lifting the server siege...
-Transactions:                 635630 hits
-Availability:                 100.00 %
-Elapsed time:                  29.52 secs
-Data transferred:              21.82 MB
-Response time:                  0.00 secs
-Transaction rate:           21532.18 trans/sec
-Throughput:                     0.74 MB/sec
-Concurrency:                   23.27
-Successful transactions:      635631
-Failed transactions:               0
-Longest transaction:            0.04
-Shortest transaction:           0.00
+$ countdown conundrum -d dictionary.txt soartrip
+airports
 ```
 
 ## Contributing
