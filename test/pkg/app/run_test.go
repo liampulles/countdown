@@ -1,6 +1,7 @@
 package run_test
 
 import (
+	"path"
 	"testing"
 
 	"github.com/liampulles/countdown/pkg/app"
@@ -29,9 +30,20 @@ func TestRun_WhenGivenInvalidCommand_ShouldFail(t *testing.T) {
 	assert.Equal(t, 2, actual)
 }
 
-func TestRun_WhenGivenValidPassingCommand_ShouldPass(t *testing.T) {
+func TestRun_WhenGivenValidFailingCommand_ShouldFail(t *testing.T) {
 	// Setup fixture
 	fixture := []string{"some.exe.name", "conundrum"}
+
+	// Exercise SUT
+	actual := app.Run(fixture)
+
+	// Verify results
+	assert.Equal(t, 3, actual)
+}
+
+func TestRun_WhenGivenValidPassingCommand_ShouldPass(t *testing.T) {
+	// Setup fixture
+	fixture := []string{"some.exe.name", "conundrum", "-dictionary", path.Join("testdata", "dictionary.txt"), "dog"}
 
 	// Exercise SUT
 	actual := app.Run(fixture)
