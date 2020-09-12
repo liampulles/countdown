@@ -1,1 +1,4 @@
 god
+bushido
+tuchis
+cuboids

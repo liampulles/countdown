@@ -11,7 +11,7 @@ import (
 func Conundrum(args []string) error {
 	flagSet := flag.NewFlagSet("conundrum", flag.ContinueOnError)
 	dictionaryPathPtr := flagSet.String("dictionary", "dictionary.txt", "Path to the dictionary file to use")
-	if err := parseFlags(flagSet, args); err != nil {
+	if err := parseConundrumFlags(flagSet, args); err != nil {
 		return err
 	}
 
@@ -32,7 +32,7 @@ func Conundrum(args []string) error {
 // Check we match the type
 var _ Command = Conundrum
 
-func parseFlags(flagSet *flag.FlagSet, args []string) error {
+func parseConundrumFlags(flagSet *flag.FlagSet, args []string) error {
 	if err := flagSet.Parse(args); err != nil {
 		return fmt.Errorf("could not parse args: %w", err)
 	}

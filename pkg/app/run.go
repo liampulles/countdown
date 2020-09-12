@@ -10,6 +10,7 @@ import (
 
 var registeredCommands = map[string]command.Command{
 	"conundrum": command.Conundrum,
+	"letters":   command.Letters,
 }
 
 // Run is a delegate for the main function,
