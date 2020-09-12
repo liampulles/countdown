@@ -37,7 +37,7 @@ Countdown is currently (and possibly permanently) in alpha
 
 ## Install
 
-Either download a release from the releases page, or clone and run `make install`.
+Either download a release from the releases page, or clone and run `make install`. If you download a release, make sure to get a dictionary.txt as well!
 
 ## Usage Examples
 
@@ -46,6 +46,13 @@ Either download a release from the releases page, or clone and run `make install
 ```bash
 $ countdown conundrum -d dictionary.txt soartrip
 airports
+```
+
+### Letters round
+
+```bash
+$ countdown letters -d dictionary.txt sotcidbuh
+cuboids, bushido, outchid, outbids, cistudo, tuboid, cubits, cuboid, cubito, dhobis, bichos, sothic, dhotis, dhutis, hobits, outbid, subito, biscot, cubist, tuchis
 ```
 
 ## Contributing
