@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/github/release/liampulles/countdown.svg" alt="[GitHub release]">
   </a>
   <a href="https://travis-ci.com/liampulles/countdown">
-    <img src="https://travis-ci.com/liampulles/countdown.svg?branch=master" alt="[Build Status]">
+    <img src="https://api.travis-ci.com/liampulles/countdown.svg?branch=master&status=started" alt="[Build Status]">
   </a>
     <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/liampulles/countdown">
   <a href="https://goreportcard.com/report/github.com/liampulles/countdown">
